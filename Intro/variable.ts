@@ -1,13 +1,13 @@
 // STRING -
-let greetings : string = "Hello, Rehan.";
+let greetings: string = "Hello, Rehan.";
 greetings.toLowerCase();
 console.log(greetings);
 
 // NUMBER - JavaScript does not have a special runtime value for integers, so there’s no equivalent to int or float - everything is simply number
-let userId : number = 201333;
+let userId: number = 201333;
 
 // BOOLEAN -
-let isLoggedIn : boolean = false;
+let isLoggedIn: boolean = false;
 
 // TYPE INFERENCE - Automatic detection of the type being used
 
@@ -17,12 +17,11 @@ let isLoggedIn : boolean = false;
 
 let hero;
 
-function getHero(){
-    return "Thor";
+function getHero() {
+  return "Thor";
 }
 
 hero = getHero();
-console.log(hero)
+console.log(hero);
 
-
-export {}
+export {};
