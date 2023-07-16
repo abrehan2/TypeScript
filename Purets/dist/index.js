@@ -20,8 +20,24 @@ class User {
         this.email = email;
         this.name = name;
         _User_city.set(this, "LA");
+        this.course_count = 1;
         this.email = email;
         this.name = name;
+    }
+    get myEmail() {
+        return this.email;
+    }
+    get courseCount() {
+        return this.course_count;
+    }
+    set courseCount(courseNum) {
+        if (courseNum > 1) {
+            this.course_count = courseNum;
+        }
+        throw new Error("The course count should be more than 1");
+    }
+    deleteToken() {
+        console.log("Token deleted");
     }
 }
 _User_city = new WeakMap();
