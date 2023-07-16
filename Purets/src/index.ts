@@ -20,6 +20,7 @@ console.log("IM WORKING!!");
 class User {
   readonly #city: string = "LA";
   private course_count: number = 1;
+  protected count: number = 1;
 
   constructor(public email: string, private name: string) {
     this.email = email;
@@ -42,9 +43,16 @@ class User {
     throw new Error("The course count should be more than 1");
   }
 
-  private deleteToken()
-  {
+  private deleteToken() {
     console.log("Token deleted");
+  }
+}
+
+class subUser extends User {
+  isFamily: boolean = true;
+
+  changeCourseCount() {
+    this.count = 4;
   }
 }
 

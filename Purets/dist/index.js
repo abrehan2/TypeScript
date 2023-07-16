@@ -21,6 +21,7 @@ class User {
         this.name = name;
         _User_city.set(this, "LA");
         this.course_count = 1;
+        this.count = 1;
         this.email = email;
         this.name = name;
     }
@@ -41,5 +42,14 @@ class User {
     }
 }
 _User_city = new WeakMap();
+class subUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this.count = 4;
+    }
+}
 const obj = new User("abc.com", "Rehan");
 // obj.city = "Toronto";
