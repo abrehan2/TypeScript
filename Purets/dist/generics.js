@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// ALLOWS TO REUSE COMPONENTS 
+// ALLOWS TO REUSE COMPONENTS
 const score = [];
 const names = [];
 function identityOne(val) {
@@ -15,4 +15,14 @@ function identityThree(val) {
 function identityFour(val) {
     return val;
 }
-identityFour({ brand: "Rehan", type: 3 });
+// identityFour<Bootle>({})
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function getSearchProducts(products) {
+    const myIndex = 3;
+    return products[myIndex];
+}
+const getMoreSearchProducts = (Products) => {
+    const myIndex = 4;
+    return Products[myIndex];
+};
+// <T,> - The comma represents a syntax for generics
