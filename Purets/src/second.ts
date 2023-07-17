@@ -28,3 +28,5 @@ class Youtube implements takePhoto {
     public short: string
   ) {}
 }
+
+export {};
