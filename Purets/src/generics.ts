@@ -32,7 +32,7 @@ function getSearchProducts<T>(products: Array<T>): T {
   return products[myIndex];
 }
 
-const getMoreSearchProducts = <T,>(Products: T[]): T => {
+const getMoreSearchProducts = <T>(Products: T[]): T => {
   const myIndex = 4;
   return Products[myIndex];
 };
@@ -42,17 +42,16 @@ const getMoreSearchProducts = <T,>(Products: T[]): T => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 interface Database {
-    connection: string,
-    username: string,
-    password: string,
+  connection: string;
+  username: string;
+  password: string;
 }
 
-function anotherFunction<T, U extends Database>(valueOne: T, valueTwo: U)
-{
-    return {
-        valueOne,
-        valueTwo
-    }
+function anotherFunction<T, U extends Database>(valueOne: T, valueTwo: U) {
+  return {
+    valueOne,
+    valueTwo,
+  };
 }
 
 // anotherFunction(3, {})
@@ -60,20 +59,19 @@ function anotherFunction<T, U extends Database>(valueOne: T, valueTwo: U)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 interface Quiz {
-    name: string
+  name: string;
 }
 
 interface Course {
-    author: string
+  author: string;
 }
 
 class Sellable<T> {
-    public cart: T[] = [];
+  public cart: T[] = [];
 
-    addToCart(product: T)
-    {
-        this.cart.push(product);
-    }
+  addToCart(product: T) {
+    this.cart.push(product);
+  }
 }
 
 export {};

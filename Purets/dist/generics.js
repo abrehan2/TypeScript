@@ -28,7 +28,7 @@ const getMoreSearchProducts = (Products) => {
 function anotherFunction(valueOne, valueTwo) {
     return {
         valueOne,
-        valueTwo
+        valueTwo,
     };
 }
 class Sellable {
