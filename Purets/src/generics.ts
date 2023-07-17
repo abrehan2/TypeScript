@@ -37,6 +37,43 @@ const getMoreSearchProducts = <T,>(Products: T[]): T => {
   return Products[myIndex];
 };
 
-export {};
-
 // <T,> - The comma represents a syntax for generics
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+interface Database {
+    connection: string,
+    username: string,
+    password: string,
+}
+
+function anotherFunction<T, U extends Database>(valueOne: T, valueTwo: U)
+{
+    return {
+        valueOne,
+        valueTwo
+    }
+}
+
+// anotherFunction(3, {})
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+interface Quiz {
+    name: string
+}
+
+interface Course {
+    author: string
+}
+
+class Sellable<T> {
+    public cart: T[] = [];
+
+    addToCart(product: T)
+    {
+        this.cart.push(product);
+    }
+}
+
+export {};

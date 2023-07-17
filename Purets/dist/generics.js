@@ -25,4 +25,17 @@ const getMoreSearchProducts = (Products) => {
     const myIndex = 4;
     return Products[myIndex];
 };
-// <T,> - The comma represents a syntax for generics
+function anotherFunction(valueOne, valueTwo) {
+    return {
+        valueOne,
+        valueTwo
+    };
+}
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}
