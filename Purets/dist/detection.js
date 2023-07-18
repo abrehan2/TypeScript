@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function detectType(val) {
     if (typeof val === "string") {
         return val.toLowerCase();
@@ -12,4 +13,10 @@ function provideId(id) {
         return;
     }
     id.toLowerCase();
+}
+function isAdmin(account) {
+    if ("isAdmin" in account) {
+        return account.isAdmin;
+    }
+    return false;
 }
