@@ -3,7 +3,7 @@
 </div>
 
 # Overview
-<b>Greetings, fellow developers! I've started a series on TypeScript with the goal of providing you with valuable knowledge. A basic understanding of JavaScript is necessary. Happy learning!</b> <br><br>
+<b>Greetings, fellow developers! I've started a series on TypeScript with the goal of providing you valuable knowledge. A basic understanding of JavaScript is necessary. Happy learning!</b> <br><br>
 
 <div align="center">
 <h3>Show some ❤️ by starring the repository!</h3>
